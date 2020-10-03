@@ -1,0 +1,30 @@
+﻿@model List<MVCMonsoon7amBatch23sep.Models.EmployeeModel>
+@{
+    ViewBag.Title = "GetAllEmployeeModel";
+    
+}
+
+<h2>GetAllEmployeeModel</h2>
+
+<table class="table-bordered">
+    <tr>
+        <th>EmpId</th>
+        <th>EmpName</th>
+        <th>EmpSalary</th>
+    </tr>
+
+    @foreach (var item in Model)//3swapnil,divya,swathi
+    {
+        <tr>
+            <td>
+                @item.Empid
+            </td>
+            <td>
+                @item.EmpName
+            </td>
+            <td>
+                @item.EmpSalary
+            </td>
+        </tr>
+    }
+</table>
