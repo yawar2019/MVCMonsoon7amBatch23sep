@@ -112,7 +112,7 @@ namespace MVCMonsoon7amBatch23sep.Controllers
 
             EmployeeModel obj2 = new EmployeeModel();
             obj2.Empid = 1213;
-            obj2.EmpName = "Diksha";
+            obj2.EmpName = "Swathi";
             obj2.EmpSalary = 49000;
 
             listobj.Add(obj);
