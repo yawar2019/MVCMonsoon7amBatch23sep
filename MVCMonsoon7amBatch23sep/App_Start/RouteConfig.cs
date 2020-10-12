@@ -14,6 +14,11 @@ namespace MVCMonsoon7amBatch23sep
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Tiger",
+                url: "Bakery/Dilkhush",
+                defaults: new { controller = "Home", action = "GetAllEmployeeModel", id = UrlParameter.Optional }
+            );
+             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

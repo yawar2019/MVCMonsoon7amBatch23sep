@@ -9,9 +9,11 @@ namespace MVCMonsoon7amBatch23sep.Controllers
     public class DefaultController : Controller
     {
         // GET: Default
-        public ActionResult Index()
+        public ActionResult Index(int id)
         {
-            return View();
+            return Redirect("http://www.google.com");
         }
+
+
     }
 }
